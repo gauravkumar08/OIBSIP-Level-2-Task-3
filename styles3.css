@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  transition: all .3s;
+}
+body {
+  background-image: linear-gradient(to right , pink ,rgb(0,204,255));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+.title {
+  font-size: 4rem;
+  font-weight: 300;
+  color: rgb(133, 6, 6);
+  color: black;
+  letter-spacing: 1px;
+  padding-bottom: 130px ;
+  margin: 50px 0px;
+  opacity: 0.5;
+}
+.main-container {
+  width: 500px;
+  height: auto;
+  padding: 10px;
+  margin-bottom: 350px;
+  box-shadow: 0px 10px 20px 5px rgba(0,0,0,0.8);
+  border-radius: 4px;
+  background-color: rgba(0,0,0,0.2);
+}
+.main-container:hover {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 30px 20px -3px;
+}
+.adding-list-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+}
+.input-list {
+  border-radius: 3px;
+  border: 1px solid #d4d4d1;
+  padding: 10px;
+  font-size: 1rem;
+  outline: none;
+  color: black;
+  cursor: pointer;
+}
+.input-list:focus {
+  border-color: blue;
+}
+.input-list::placeholder {
+  color: rgb(0, 21, 255);
+  text-align: center;
+  opacity: 0.4;
+}
+.input-list:hover{
+  box-shadow: 0px 0px 10px rgb(217, 255, 0);
+  transition: all .3s;
+  cursor: pointer;
+}
+.add-btn {
+  border: none;
+  border-radius: 4px;
+  color: black;
+  background-color: #1be42c;
+  font-size: 1rem;
+  outline: none;
+  cursor: pointer;
+}
+.add-btn:hover {
+  box-shadow: 0px 0px 10px rgb(255, 0, 51);
+  transition: all .3s;
+  cursor: pointer;
+}
+.tasks-box {
+  width: 100%;
+  margin-top: 10px;
+}
+.item {
+  box-shadow: 0 20px 20px rgba(50,20,0,0.8);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 25px;
+  background-color: whitesmoke;
+}
+.item p {
+  font-size: 2.5rem;
+  font-weight: 350;
+  color: rgb(13, 128, 132);
+  letter-spacing: 1.5px;
+}
+.completed span {
+  color: red;
+  text-decoration: line-through;
+}
+.item-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.item-btn i {
+  color: rgb(133, 6, 78);
+  font-size: 1rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 500px) {
+  .title {
+    font-size: 2rem;
+  }
+}
+marquee{
+    color: #1b36e4;
+    margin-top: 190px;
+}
